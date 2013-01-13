@@ -1,0 +1,1235 @@
+
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery Mobile Web App</title>
+
+<link href="jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+<link href="adoptAppchiaro.css" rel="stylesheet" type="text/css"/>
+<link href="_/css/mystyle.css" rel="stylesheet" type="text/css"/>
+
+<script src="jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery.mobile-1.0.min.js" type="text/javascript"></script>
+
+
+</head> 
+<body>
+
+<!--home-->
+<div data-role="page" id="home">
+<div data-role="content" > 
+<h3> CHE PIANTA E'? </h3>
+    <img src="images/homepage.png" alt="the plant library" width="240">
+    <p> un progetto di <br/>
+    Adopt a piece of green </p>
+ </div> <!--content-->
+     <div data-role="footer" data-fullscreen="true"  data-id="vs_footer">
+     <div data-role="navbar">
+     	<ul>
+        	<li> <a href="#home" data-role="button" data-icon="home"> home </a></li>
+        	<li> <a href="#progetto" data-role="button" data-icon="info"> about </a></li>
+          <li> <a href="#elenco2" data-role="button" data-icon="gear"> che pianta e'? </a> </li>
+            <li> <a href="#elenco1" data-role="button" data-icon="gear"> catalogo piante </a> </li>
+     </div> <!--navbar-->
+     </div> <!--footer-->
+     
+</div> <!--home-->
+
+
+<!--progetto-->
+<div data-role="page" id="progetto">
+<div data-role="header" data-fullscreen="true" data-position="fixed" 
+    data-rel="back">
+    <a href="#" data-icon="back" data-iconpos="notext" class="ui-btn-right" data-rel="back"> back </a>
+    <h4>IL PROGETTO</h4>
+     </div> <!--header-->
+<div data-role="content"> 
+    <h3>IL NOSTRO PROGETTO</h3>
+<p>
+Molti amano le piante per la loro bellezza, per i loro colori e i loro profumi. Noi amiamo il verde anche per un altro motivo: crediamo sia capace di fare del bene. Alle persone e agli spazi abitati, agli ambienti privati e  a quelli collettivi. Siamo convinti che la vicinanza con gli elementi naturali, se studiata e calibrata al meglio, sia un fattore in grado di portare serenità e benessere. Anche e soprattutto in città.  </p>
+<p>
+<b>Adopt a piece of green</b> è un progetto di rigenerazione verde, e funziona attraverso un servizio di consulenza, progettazione e realizzazione di balconi urbani, a orto o a giardino. </p>
+<p>
+Nato nel settembre 2010 nella cornice del Design Festival di Londra e già esposto nel 2011 e 2012 al Fuori Salone di Milano in diverse location prestigiose (tra cui Ordine degli architetti di Milano, lo Spazio Rossana Orlandi, via Ventura 5), <b>Adopt a piece of green</b> è un progetto che si muove in bilico tra design e paesaggio, e si avvale della collaborazione di naturalisti, biologi, psicologi ambientali e giardinieri.
+    </p>
+     <a href="http://adoptapieceofgreen.com"  data-role="button" data-icon="arrow-r" data-iconpos="right">SEGUI IL NOSTRO BLOG </a>
+    
+    <p> Adopt a piece of green è anche sul blog <b>Community Garden</b> di AtCasa.it, portale di design del Corriere della Sera. </p>
+   
+    <a href="http://blog.atcasa.corriere.it/community-garden/"  data-role="button" data-icon="arrow-r" data-iconpos="right">SEGUICI SU AtCasa.it </a>
+    <p> 
+    <b> Adopt a piece of green</b> è un progetto di <b>Daniele Belleri</b> ed <b>Elena Comincioli</b>, un giornalista e una designer.
+    </p>
+  
+   
+    <a href="mailto:adoptapieceofgreen@gmail.com" data-role="button" data-icon="arrow-r" data-iconpos="right">SCRIVICI</a>
+   
+    
+    </div> <!--content-->
+     <div data-role="footer" data-fullscreen="true" data-position="fixed" data-id="vs_footer">
+     <div data-role="navbar">
+     	<ul>
+        	<li> <a href="#home" data-role="button" data-icon="home"> home </a></li>
+        	<li> <a href="#progetto" data-role="button" data-icon="info"> il progetto </a></li>
+           
+            <li> <a href="#elenco2" data-role="button" data-icon="gear"> che pianta e'? </a> </li>
+            <li> <a href="#elenco1" data-role="button" data-icon="gear"> catalogo piante </a> </li>
+     </div> <!--navbar-->
+     </div> <!--footer-->
+   
+     
+</div> <!--progetto-->
+
+<!--elenco1-->
+<div data-role="page" id="elenco1">
+<div data-role="header"
+	data-fullscreen="true">
+    <a href="#" data-icon="back" data-iconpos="notext" class="ui-btn-right" data-rel="back"> back </a>
+    <h4>CATALOGO DELLE SPECIE</h4>
+    </div> <!--header-->
+<div data-role="content">
+            <ul data-role="listview" data-filter="true">
+          	 <li> <a href="#daucus">
+            <img src="images/piante/daucusCarota/Daucus_carota_bot.png"alt="daucus carota"><h3>CAROTA SELVATICA </h3>
+            <p> Daucus carota </p>
+            </a></li>
+             
+             <li> <a href="#solanum">
+             <img src="images/piante/solanum nigrum/solanum_bot.png" width="370" height="676" alt="Solanum nigrum">
+<h3>MORELLA COMUNE </h3>
+            <p> Solanum nigrum </p>
+            </a></li>
+            
+            <li> <a href="#galium">
+            <img src="images/piante/galium verum/galium_verum_bot.png" alt="Galium verum"><h3> CAGLIO ZOLFINO</h3>
+            <p> Galium verum </p>
+            </a></li>
+            
+            <li> <a href="#setaria">
+            <img src="images/piante/setaria viridis/setaria_viridis_bot.png" alt="Setaria viridis"><h3> SETARIA </h3>
+            <p> Setaria Viridis </p>
+            </a></li>
+            
+            <li> <a href="#verbasco">
+            <img src="images/piante/verbascum phlomoides/VerbascumPhlomoides_bot.png" alt="Verbascum phlomoides"><h3> VERBASCO </h3>
+            <p> Verbascum phlomoides</p>
+            </a></li>
+            
+            <li> <a href="#ailanto">
+            <img src="images/piante/ailantus altissima/ailanto_bot.png" alt="Ailantus altissimo"><h3> AILANTO </h3>
+            <p> Ailanthus altissimo</p>
+            </a></li>
+            
+            <li> <a href="#allium">
+            <img src="images/piante/allium carinatum/alium_carinatum_bot.png"alt="Allium carinatum"><h3> AGLIO DELLE STREGHE</h3>
+            <p> Allium carinatum</p>
+            </a></li>
+            
+            <li> <a href="#achillea">
+            <img src="images/piante/achillea millefolium/Achillea_millefolium_bot.png"alt="Achillea millefolium"><h3> ACHIELLA MILLEFOGLIE </h3>
+            <p> Achillea millefolium</p>
+            </a></li>
+            
+            <li> <a href="#trifolium">
+            <img src="images/piante/trifolium rubens/trifolium_rubens_bot.png"alt="Trifolium rubens"><h3> TRIFOLGIO ROSSO </h3>
+            <p> Trifolium rubens</p>
+            </a></li>
+            
+            <li> <a href="#globularia">
+            <img src="images/piante/globularia_punctata/Globularia_punctata_bot.png"alt="Trifolium rubens"><h3> GLOBULARIA </h3>
+            <p> Globularia punctata</p>
+            </a></li>
+  
+          	</ul>
+    
+    	</div> 
+<!--content-->
+     <div data-role="footer" data-fullscreen="true" data-position="fixed" data-id="vs_footer">
+     <div data-role="navbar">
+     	<ul>
+        	<li> <a href="#home" data-role="button" data-icon="home"> home </a></li>
+        	<li> <a href="#progetto" data-role="button" data-icon="info"> il progetto </a></li>
+            
+			<li> <a href="#elenco2" data-role="button" data-icon="gear"> che pianta e'? </a> </li>
+            <li> <a href="#elenco1" data-role="button" data-icon="gear"> catalogo piante </a> </li>
+            </ul>
+     </div> <!--navbar-->
+     </div> <!--footer-->
+  
+</div> <!--elenco1-->
+
+<!--elenco2-->
+<div data-role="page" id="elenco2">
+<div data-role="header"
+	data-fullscreen="true">
+    <a href="#" data-icon="back" data-iconpos="notext" class="ui-btn-right" data-rel="back"> back </a>
+    <h4>SCEGLI IL COLORE</h4>
+    </div> <!--header-->
+    	<div data-role="content">
+   		<ol>
+         <li>Scegli il <b>colore</b> del petalo della pianta che vuoi identificare.</li> 			<li>Scegli la <b>fotografia</b> che piu' si ravvvicina alla tua pianta.</li>
+         <li>Prosegui per vedere, nel <b>dettaglio</b>, di che specie si tratta. </li>
+         </ol>
+        <br/>
+        <br/>
+        	<div data-role="listview" class="ui-grid-a">
+    			
+                <div class="ui-block-a">
+                <a href="#bianco"> <img src="images/bianco.png"alt="bianco" ></a> 
+                </div>
+                
+                <div class="ui-block-b">
+                <a href="#giallo"> <img src="images/giallo.png"alt="giallo" ></a> 
+                
+                </div> 
+                
+                <div class="ui-block-a">
+                <a href="#viola"><img src="images/viola.png"alt="viola"> </a>
+                </div>
+                
+                <div class="ui-block-b">
+                <a href="#verde"> <img src="images/verde.png"alt="verde" ></a>
+                
+                </div> 
+                
+                <div class="ui-block-a">
+                 <a href="#rosa"><img src="images/rosa.png"alt="rosa"> </a>
+                </div>
+                
+                <div class="ui-block-b">
+                <a href="#rosso"><img src="images/rosso.png"alt="rosso"> </a>
+                </div>
+                
+                </div> <!--ui block a-->
+                
+        	</div> <!--listview-->
+            
+    	</div> <!--content-->
+        
+      <div data-role="footer" data-fullscreen="true" data-position="fixed" data-id="vs_footer">
+     <div data-role="navbar">
+     	<ul>
+        	<li> <a href="#home" data-role="button" data-icon="home"> home </a></li>
+        	<li> <a href="#progetto" data-role="button" data-icon="info"> il progetto </a></li>
+            <li> <a href="#elenco2" data-role="button" data-icon="gear"> che pianta e'? </a> </li>
+            <li> <a href="#elenco1" data-role="button" data-icon="gear"> catalogo piante </a> </li>
+            </ul>
+            
+     </div> <!--navbar-->
+     </div> <!--footer-->
+
+</div> <!--elenco2-->
+
+<!--bianco-->
+<div data-role="page" id="bianco">
+<div data-role="header"
+	data-fullscreen="true">
+    <a href="#" data-icon="back" data-iconpos="notext" class="ui-btn-right" data-rel="back"> back </a>
+    <h4>BIANCO</h4>
+    </div> <!--header-->
+<div data-role="content" >
+	<div data-role="listview" class="ui-grid-a">
+    	<div class="ui-block-a">
+		<a href="#daucus">
+        <img src="images/colori/bianco/bianco_daucuscarota.jpg" width="150"> 
+        </a>
+        </div>
+        <div class="ui-block-b">
+        <a href="#daucus">
+        <img src="images/colori/bianco/bianco_daucuscarota2 .jpg"width="150">
+        </a>
+        </div>
+        <div class="ui-block-a">
+        <a href="#achillea">
+		<img src="images/colori/bianco/bianco_achillea" width="150"></a>
+        </div>
+         <div class="ui-block-b">
+        <a href="#solanum">
+        <img src="images/colori/bianco/bianco_Solanum_nigrum.jpg" width="150">
+        </a>
+        </div>
+        
+      </div> <!--listview-->
+    </div> <!--content-->
+
+	<div data-role="footer" data-fullscreen="true" 
+    data-position="fixed" data-id="vs_footer">
+     <div data-role="navbar">
+     	<ul>
+        	<li> <a href="#home" data-role="button" data-icon="home"> home </a></li>
+        	
+            <li> <a href="#progetto" data-role="button" data-icon="info"> il progetto </a></li>
+            
+			<li> <a href="#elenco2" data-role="button" data-icon="gear"> che pianta e'? </a> </li>
+            <li> <a href="#elenco1" data-role="button" data-icon="gear"> catalogo piante </a> </li>
+            </ul>
+     </div> <!--navbar-->
+     </div> <!--footer-->
+
+</div> <!--bianco-->
+
+
+<!--rosso-->
+<div data-role="page" id="rosso">
+<div data-role="header"
+	data-fullscreen="true">
+    <a href="#" data-icon="back" data-iconpos="notext" class="ui-btn-right" data-rel="back"> back </a>
+    <h4>ROSSO</h4>
+    </div> <!--header-->
+<div data-role="content" >
+	<div data-role="listview" class="ui-grid-a">
+    	<div class="ui-block-a">
+        
+		<a href="#achillea">
+        <img src="images/colori/rosso/rosso_achillea.jpg" width="150"> 
+        </a>
+        </div>
+        <div class="ui-block-b">
+        <a href="#achillea">
+        <img src="images/colori/rosso/rosso_achillea2.jpg" width="150">
+        </a>
+        </div>
+        <div class="ui-block-a">
+        <a href="#trifolium">
+		<img src="images/colori/rosso/rosso_trifolium_rubens.jpg" width="150"></a>
+        </div>
+         <div class="ui-block-b">
+        <a href="#trifolium">
+        <img src="images/colori/rosso/rosso_trifolium-rubens.jpg" width="150">
+        </a>
+        </div> 
+        
+      </div> <!--listview-->
+    </div> <!--content-->
+
+	<div data-role="footer" data-fullscreen="true" 
+    data-position="fixed" data-id="vs_footer">
+     <div data-role="navbar">
+     	<ul>
+        	<li> <a href="#home" data-role="button" data-icon="home"> home </a></li>
+        	
+            <li> <a href="#progetto" data-role="button" data-icon="info"> il progetto </a></li>
+			<li> <a href="#elenco2" data-role="button" data-icon="gear"> che pianta e'? </a> </li>
+            <li> <a href="#elenco1" data-role="button" data-icon="gear"> catalogo piante </a> </li>
+            </ul>
+     </div> <!--navbar-->
+     </div> <!--footer-->
+
+</div> <!--rosso-->
+
+<!--giallo-->
+<div data-role="page" id="giallo">
+<div data-role="header"
+	data-fullscreen="true">
+    <a href="#" data-icon="back" data-iconpos="notext" class="ui-btn-right" data-rel="back"> back </a>
+    <h4>GIALLO</h4>
+    </div> <!--header-->
+<div data-role="content" >
+	<div data-role="listview" class="ui-grid-a">
+    	<div class="ui-block-a">
+        
+		<a href="#achillea">
+        <img src="images/colori/giallo/giallo_achillea.jpg" width="150"> 
+        </a>
+        </div>
+        <div class="ui-block-b">
+        <a href="#achillea">
+        <img src="images/colori/giallo/giallo_galium.jpg" width="150">
+        </a>
+        </div>
+        <div class="ui-block-a">
+        <a href="#verbasco">
+		<img src="images/colori/giallo/giallo_verbascum.jpg" width="150"></a>
+        </div>
+        
+        
+      </div> <!--listview-->
+    </div> <!--content-->
+
+	<div data-role="footer" data-fullscreen="true" 
+    data-position="fixed" data-id="vs_footer">
+     <div data-role="navbar">
+     	<ul>
+        	<li> <a href="#home" data-role="button" data-icon="home"> home </a></li>
+        	
+            <li> <a href="#progetto" data-role="button" data-icon="info"> il progetto </a></li>
+			<li> <a href="#elenco2" data-role="button" data-icon="gear"> che pianta e'? </a> </li>
+            <li> <a href="#elenco1" data-role="button" data-icon="gear"> catalogo piante </a> </li>
+            </ul>
+     </div> <!--navbar-->
+     </div> <!--footer-->
+
+</div> <!--giallo-->
+
+<!--rosa-->
+<div data-role="page" id="rosa">
+<div data-role="header"
+	data-fullscreen="true">
+    <a href="#" data-icon="back" data-iconpos="notext" class="ui-btn-right" data-rel="back"> back </a>
+    <h4>ROSA</h4>
+    </div> <!--header-->
+<div data-role="content" >
+	<div data-role="listview" class="ui-grid-a">
+    	<div class="ui-block-a">
+        
+		<a href="#achillea">
+        <img src="images/colori/rosa/rosa_achillea.jpg" width="150"> 
+        </a>
+        </div>
+        <div class="ui-block-b">
+        <a href="#allium">
+        <img src="images/colori/rosa/rosa_Allium carinatum.jpg" width="150">
+        </a>
+        </div>
+        
+      </div> <!--listview-->
+    </div> <!--content-->
+
+	<div data-role="footer" data-fullscreen="true" 
+    data-position="fixed" data-id="vs_footer">
+     <div data-role="navbar">
+     	<ul>
+        	<li> <a href="#home" data-role="button" data-icon="home"> home </a></li>
+        	
+            <li> <a href="#progetto" data-role="button" data-icon="info"> il progetto </a></li>
+            
+			<li> <a href="#elenco2" data-role="button" data-icon="gear"> che pianta e'? </a> </li>
+            <li> <a href="#elenco1" data-role="button" data-icon="gear"> catalogo piante </a> </li>
+            </ul>
+     </div> <!--navbar-->
+     </div> <!--footer-->
+
+</div> <!--rosa-->
+
+<!--verde-->
+<div data-role="page" id="verde">
+<div data-role="header"
+	data-fullscreen="true">
+    <a href="#" data-icon="back" data-iconpos="notext" class="ui-btn-right" data-rel="back"> back </a>
+    <h4>VERDE</h4>
+    </div> <!--header-->
+<div data-role="content" >
+	<div data-role="listview" class="ui-grid-a">
+    	<div class="ui-block-a">
+        
+		<a href="#setaria">
+        <img src="images/colori/verde/verde_Setaria.jpg" width="150"> 
+        </a>
+        </div>
+        <div class="ui-block-b">
+        <a href="#setaria">
+        <img src="images/colori/verde/verde_Setaria2.jpg" width="150">
+        </a>
+        </div>
+        
+      </div> <!--listview-->
+    </div> <!--content-->
+
+	<div data-role="footer" data-fullscreen="true" 
+    data-position="fixed" data-id="vs_footer">
+     <div data-role="navbar">
+     	<ul>
+        	<li> <a href="#home" data-role="button" data-icon="home"> home </a></li>
+        	
+            <li> <a href="#progetto" data-role="button" data-icon="info"> il progetto </a></li>
+			<li> <a href="#elenco2" data-role="button" data-icon="gear"> che pianta e'? </a> </li>
+            <li> <a href="#elenco1" data-role="button" data-icon="gear"> catalogo piante </a> </li>
+            </ul>
+     </div> <!--navbar-->
+     </div> <!--footer-->
+
+</div> <!--verde-->
+
+<!--viola-->
+<div data-role="page" id="viola">
+<div data-role="header"
+	data-fullscreen="true">
+    <a href="#" data-icon="back" data-iconpos="notext" class="ui-btn-right" data-rel="back"> back </a>
+    <h4>VIOLA</h4>
+    </div> <!--header-->
+<div data-role="content" >
+	<div data-role="listview" class="ui-grid-a">
+    	<div class="ui-block-a">
+		<a href="#allium">
+        <img src="images/colori/viola/viola_Allium carinatum.jpg" width="150"> 
+        </a>
+        </div>
+        <div class="ui-block-b">
+        <a href="#allium">
+        <img src="images/colori/viola/viola_Allium-carinatum.jpg" width="150">
+        </a>
+        </div>
+        <div class="ui-block-a">
+		<a href="#globularia">
+        <img src="images/colori/viola/viola_Globularia.jpg" width="150"> 
+        </a>
+        </div>
+        <div class="ui-block-b">
+        <a href="#globularia">
+        <img src="images/colori/viola/viola_Globularia2.jpg"width="150">
+        </a>
+        </div>
+        <div class="ui-block-a">
+		<a href="#solanum">
+        <img src="images/colori/viola/viola_solanum.jpg" width="150"> 
+        </a>
+        </div>
+        
+      </div> <!--listview-->
+    </div> <!--content-->
+
+	<div data-role="footer" data-fullscreen="true" 
+    data-position="fixed" data-id="vs_footer">
+     <div data-role="navbar">
+     	<ul>
+        	<li> <a href="#home" data-role="button" data-icon="home"> home </a></li>
+        	
+            <li> <a href="#progetto" data-role="button" data-icon="info"> il progetto </a></li>
+           
+			<li> <a href="#elenco2" data-role="button" data-icon="gear"> che pianta e'? </a> </li>
+            <li> <a href="#elenco1" data-role="button" data-icon="gear"> catalogo piante </a> </li>
+            </ul>
+     </div> <!--navbar-->
+     </div> <!--footer-->
+
+</div> <!--verde-->
+
+<!--daucus carota-->
+<div data-role="page" id="daucus">
+<div data-role="header"
+	data-fullscreen="true">
+    <a href="#" data-icon="back" data-iconpos="notext" class="ui-btn-right" data-rel="back"> back </a>
+    <h4>CAROTA SELVATICA</h4>
+    
+    </div> <!--header-->
+<div data-role="content">
+<p> Daucus carota </p>
+		<img src="images/piante/daucusCarota/Daucus_carota_bot.png" alt="Daucus carota" width="320">
+     <div data-role="listview" class="ui-grid-a">
+     	<div class="ui-block-a">
+        <img src="images/paletta.png" alt="piantare">
+        </div>
+        <div class="ui-block-b">
+        <br/>
+        <h3>piantumazione</h3>
+        <p> A DIMORA: ottobre-novembre
+        <br/>
+        A CASSETTA:febbraio</p>
+        </div>
+       
+        <div class="ui-block-a">
+        <img src="images/cucchiaio.png">
+        </div>
+        <div class="ui-block-b">
+        <br/>
+        <h3>fioritura </h3>
+        <p> maggio-luglio </p>
+        </div>
+        
+        <div class="ui-block-a">
+        <img src="images/semi.png" alt="seminare">
+        </div>
+        <div class="ui-block-b">
+        <br/>
+        <h3>raccolta semi </h3>
+        <p> settembre-ottobre </p>
+        </div>
+  
+      </div> <!--listview-->
+      
+      	<div data-role="collapsible-set">
+        <div data-role="collapsible">
+        
+        <h3>altre immagini</h3>
+        <img src="images/piante/daucusCarota/Daucus_carota_plant.jpg" width="300">
+        <img src="images/piante/daucusCarota/Daucus carota .JPG" width="300">
+        </div>
+        </div>
+        
+        
+    </div> <!--content-->
+
+	<div data-role="footer" data-fullscreen="true" 
+    data-position="fixed" data-id="vs_footer">
+     <div data-role="navbar">
+     	<ul>
+        	<li> <a href="#home" data-role="button" data-icon="home"> home </a></li>
+        	<li> <a href="#progetto" data-role="button" data-icon="info"> il progetto </a></li>
+			<li> <a href="#elenco2" data-role="button" data-icon="gear"> che pianta e'? </a> </li>
+            <li> <a href="#elenco1" data-role="button" data-icon="gear"> catalogo piante </a> </li>
+            </ul>
+     </div> <!--navbar-->
+     </div> <!--footer-->
+
+</div> <!--daucus-->
+
+<!--achillea millefolium-->
+<div data-role="page" id="achillea">
+<div data-role="header"
+	data-fullscreen="true">
+    <a href="#" data-icon="back" data-iconpos="notext" class="ui-btn-right" data-rel="back"> back </a>
+    <h4>ACHILLEA MILLEFOGLIE</h4>
+    
+    </div> <!--header-->
+<div data-role="content">
+<p> Achillea millefolium </p>
+		<img src="images/piante/achillea millefolium/Achillea_millefolium_bot.png" alt="Achillea millefolium" width="320">
+        
+      <div data-role="listview" class="ui-grid-a">
+     	<div class="ui-block-a">
+        <img src="images/paletta.png" alt="piantare">
+        </div>
+        <div class="ui-block-b">
+        <br/>
+        <h3>piantumazione</h3>
+        <p> A DIMORA: ottobre-novembre
+        <br/>
+        A CASSETTA: febbraio</p>
+        </div>
+       
+        <div class="ui-block-a">
+        <img src="images/cucchiaio.png">
+        </div>
+        <div class="ui-block-b">
+        <br/>
+        <h3>fioritura </h3>
+        <p> maggio-luglio </p>
+        </div>
+        
+        <div class="ui-block-a">
+        <img src="images/semi.png" alt="seminare">
+        </div>
+        <div class="ui-block-b">
+        <br/>
+        <h3>raccolta semi </h3>
+        <p> settembre-ottobre </p>
+        </div>
+  
+      </div> <!--listview-->
+      
+      	<div data-role="collapsible-set">
+        <div data-role="collapsible">
+        
+        <h3>altre immagini</h3>
+        <img src="images/piante/achillea millefolium/8796331376670.jpg" width="300">
+        <img src="images/piante/achillea millefolium/8796331442206.jpg" width="300">
+        <img src="images/piante/achillea millefolium/Achillea_millefolium_Sturm13039.jpg" width="300">
+        </div>
+        </div>
+     
+     
+    </div> <!--content-->
+
+	<div data-role="footer" data-fullscreen="true" 
+    data-position="fixed" data-id="vs_footer">
+     <div data-role="navbar">
+     	<ul>
+        	<li> <a href="#home" data-role="button" data-icon="home"> home </a></li>
+        	<li> <a href="#progetto" data-role="button" data-icon="info"> il progetto </a></li>
+			<li> <a href="#elenco2" data-role="button" data-icon="gear"> che pianta e'? </a> </li>
+            <li> <a href="#elenco1" data-role="button" data-icon="gear"> catalogo piante </a> </li>
+            </ul>
+     </div> <!--navbar-->
+     </div> <!--footer-->
+
+</div> <!--achiellea millefolium-->
+
+<!--solanum nigrum-->
+<div data-role="page" id="solanum">
+<div data-role="header"
+	data-fullscreen="true">
+    <a href="#" data-icon="back" data-iconpos="notext" class="ui-btn-right" data-rel="back"> back </a>
+    <h4>MORELLA COMUNE</h4>
+    
+    </div> <!--header-->
+<div data-role="content">
+<p> Solanum nigrum </p>
+		<img src="images/piante/solanum nigrum/solanum_bot.png"alt="Solanum nigrum" width="320">
+        
+      <div data-role="listview" class="ui-grid-a">
+     	<div class="ui-block-a">
+        <img src="images/paletta.png" alt="piantare">
+        </div>
+        <div class="ui-block-b">
+        <br/>
+        <h3>piantumazione</h3>
+        <p> A DIMORA: ottobre-novembre
+        <br/>
+        A CASSETTA: febbraio</p>
+        </div>
+       
+        <div class="ui-block-a">
+        <img src="images/cucchiaio.png">
+        </div>
+        <div class="ui-block-b">
+        <br/>
+        <h3>fioritura </h3>
+        <p> maggio-luglio </p>
+        </div>
+        
+        <div class="ui-block-a">
+        <img src="images/semi.png" alt="seminare">
+        </div>
+        <div class="ui-block-b">
+        <br/>
+        <h3>raccolta semi </h3>
+        <p> settembre-ottobre </p>
+        </div>
+  
+      </div> <!--listview-->
+      
+      	<div data-role="collapsible-set">
+        <div data-role="collapsible">
+        
+        <h3>altre immagini</h3>
+        <img src="images/piante/solanum nigrum/solanum nigrum bacche.jpg" width="300">
+        <img src="images/piante/solanum nigrum/Solanum_nigrum.jpg" width="300">
+        
+        </div>
+        </div>
+     
+     
+    </div> <!--content-->
+
+	<div data-role="footer" data-fullscreen="true" 
+    data-position="fixed" data-id="vs_footer">
+     <div data-role="navbar">
+     	<ul>
+        	<li> <a href="#home" data-role="button" data-icon="home"> home </a></li>
+        	<li> <a href="#progetto" data-role="button" data-icon="info"> il progetto </a></li>
+			<li> <a href="#elenco2" data-role="button" data-icon="gear"> che pianta e'? </a> </li>
+            <li> <a href="#elenco1" data-role="button" data-icon="gear"> catalogo piante </a> </li>
+            </ul>
+     </div> <!--navbar-->
+     </div> <!--footer-->
+
+</div> <!--solanum nigrum-->
+
+<!--galium verum-->
+<div data-role="page" id="galium">
+<div data-role="header"
+	data-fullscreen="true">
+    <a href="#" data-icon="back" data-iconpos="notext" class="ui-btn-right" data-rel="back"> back </a>
+    <h4>CAGLIO ZOLFINO</h4>
+    
+    </div> <!--header-->
+<div data-role="content">
+<p> Galium verum </p>
+		<img src="images/piante/galium verum/galium_verum_bot.png" alt="Galium verum" width="320">
+        
+      <div data-role="listview" class="ui-grid-a">
+     	<div class="ui-block-a">
+        <img src="images/paletta.png" alt="piantare">
+        </div>
+        <div class="ui-block-b">
+        <br/>
+        <h3>piantumazione</h3>
+        <p> A DIMORA: ottobre-novembre
+        <br/>
+        A CASSETTA: febbraio</p>
+        </div>
+       
+        <div class="ui-block-a">
+        <img src="images/cucchiaio.png">
+        </div>
+        <div class="ui-block-b">
+        <br/>
+        <h3>fioritura </h3>
+        <p> maggio-luglio </p>
+        </div>
+        
+        <div class="ui-block-a">
+        <img src="images/semi.png" alt="seminare">
+        </div>
+        <div class="ui-block-b">
+        <br/>
+        <h3>raccolta semi </h3>
+        <p> settembre-ottobre </p>
+        </div>
+  
+      </div> <!--listview-->
+      
+      	<div data-role="collapsible-set">
+        <div data-role="collapsible">
+        
+        <h3>altre immagini</h3>
+        <img src="images/piante/galium verum/galium verum fiore.jpg" width="300">
+        <img src="images/piante/galium verum/galium verum pianta.jpg" width="300">
+        
+        </div>
+        </div>
+     
+     
+    </div> <!--content-->
+
+	<div data-role="footer" data-fullscreen="true" 
+    data-position="fixed" data-id="vs_footer">
+     <div data-role="navbar">
+     	<ul>
+        	<li> <a href="#home" data-role="button" data-icon="home"> home </a></li>
+        	<li> <a href="#progetto" data-role="button" data-icon="info"> il progetto </a></li>
+			<li> <a href="#elenco2" data-role="button" data-icon="gear"> che pianta e'? </a> </li>
+            <li> <a href="#elenco1" data-role="button" data-icon="gear"> catalogo piante </a> </li>
+            </ul>
+     </div> <!--navbar-->
+     </div> <!--footer-->
+
+</div> <!--galium verum-->
+
+
+<!--setaria viridis-->
+<div data-role="page" id="setaria">
+<div data-role="header"
+	data-fullscreen="true">
+    <a href="#" data-icon="back" data-iconpos="notext" class="ui-btn-right" data-rel="back"> back </a>
+    <h4>SETARIA</h4>
+    
+    </div> <!--header-->
+<div data-role="content">
+<p> Setaria viridis </p>
+		<img src="images/piante/setaria viridis/setaria_viridis_bot.png" alt="Galium verum" width="320">
+        <br/>
+        <br/>
+
+        
+      <div data-role="listview" class="ui-grid-a">
+     	<div class="ui-block-a">
+        <img src="images/paletta.png" alt="piantare">
+        </div>
+        <div class="ui-block-b">
+        <br/>
+        <h3>piantumazione</h3>
+        <p> A DIMORA: ottobre-novembre
+        <br/>
+        A CASSETTA: febbraio</p>
+        </div>
+       
+        <div class="ui-block-a">
+        <img src="images/cucchiaio.png">
+        </div>
+        <div class="ui-block-b">
+        <br/>
+        <h3>fioritura </h3>
+        <p> maggio-luglio </p>
+        </div>
+        
+        <div class="ui-block-a">
+        <img src="images/semi.png" alt="seminare">
+        </div>
+        <div class="ui-block-b">
+        <br/>
+        <h3>raccolta semi </h3>
+        <p> settembre-ottobre </p>
+        </div>
+  
+      </div> <!--listview-->
+      
+      	<div data-role="collapsible-set">
+        <div data-role="collapsible">
+        
+        <h3>altre immagini</h3>
+        <img src="images/piante/setaria viridis/3.jpg" width="300">
+        <img src="images/piante/setaria viridis/Setaria_viridis_plant.jpg" width="300">
+        
+        </div>
+        </div>
+     
+     
+    </div> <!--content-->
+
+	<div data-role="footer" data-fullscreen="true" 
+    data-position="fixed" data-id="vs_footer">
+     <div data-role="navbar">
+     	<ul>
+        	<li> <a href="#home" data-role="button" data-icon="home"> home </a></li>
+        	<li> <a href="#progetto" data-role="button" data-icon="info"> il progetto </a></li>
+			<li> <a href="#elenco2" data-role="button" data-icon="gear"> che pianta e'? </a> </li>
+            <li> <a href="#elenco1" data-role="button" data-icon="gear"> catalogo piante </a> </li>
+            </ul>
+     </div> <!--navbar-->
+     </div> <!--footer-->
+
+</div> <!--setaria viridis-->
+
+<!--verbascum phlomoides-->
+<div data-role="page" id="verbasco">
+<div data-role="header"
+	data-fullscreen="true">
+    <a href="#" data-icon="back" data-iconpos="notext" class="ui-btn-right" data-rel="back"> back </a>
+    <h4>VERBASCO</h4>
+    
+    </div> <!--header-->
+<div data-role="content">
+<p> Verbascum phlomoides </p>
+		<img src="images/piante/verbascum phlomoides/VerbascumPhlomoides_bot.png" alt="Verbascum Phlomoides" width="320">
+        <br/>
+        <br/>
+
+        
+      <div data-role="listview" class="ui-grid-a">
+     	<div class="ui-block-a">
+        <img src="images/paletta.png" alt="piantare">
+        </div>
+        <div class="ui-block-b">
+        <br/>
+        <h3>piantumazione</h3>
+        <p> A DIMORA: ottobre-novembre
+        <br/>
+        A CASSETTA: febbraio</p>
+        </div>
+       
+        <div class="ui-block-a">
+        <img src="images/cucchiaio.png">
+        </div>
+        <div class="ui-block-b">
+        <br/>
+        <h3>fioritura </h3>
+        <p> maggio-luglio </p>
+        </div>
+        
+        <div class="ui-block-a">
+        <img src="images/semi.png" alt="seminare">
+        </div>
+        <div class="ui-block-b">
+        <br/>
+        <h3>raccolta semi </h3>
+        <p> settembre-ottobre </p>
+        </div>
+  
+      </div> <!--listview-->
+      
+      	<div data-role="collapsible-set">
+        <div data-role="collapsible">
+        
+        <h3>altre immagini</h3>
+        <img src="images/piante/verbascum phlomoides/verbascum phlomoides fiore.jpg" width="300">
+        <img src="images/piante/verbascum phlomoides/Verbascum_phlomoides.jpg" width="300">
+        
+        </div>
+        </div>
+     
+     
+    </div> <!--content-->
+
+	<div data-role="footer" data-fullscreen="true" 
+    data-position="fixed" data-id="vs_footer">
+     <div data-role="navbar">
+     	<ul>
+        	<li> <a href="#home" data-role="button" data-icon="home"> home </a></li>
+        	<li> <a href="#progetto" data-role="button" data-icon="info"> il progetto </a></li>
+			<li> <a href="#elenco2" data-role="button" data-icon="gear"> che pianta e'? </a> </li>
+            <li> <a href="#elenco1" data-role="button" data-icon="gear"> catalogo piante </a> </li>
+            </ul>
+     </div> <!--navbar-->
+     </div> <!--footer-->
+
+</div> <!--verbascum phlomoides-->
+
+<!--ailantus altissima-->
+<div data-role="page" id="ailanto">
+<div data-role="header"
+	data-fullscreen="true">
+    <a href="#" data-icon="back" data-iconpos="notext" class="ui-btn-right" data-rel="back"> back </a>
+    <h4>AILANTO</h4>
+    
+    </div> <!--header-->
+<div data-role="content">
+<p> Ailanthus altissima </p>
+		<img src="images/piante/ailantus altissima/ailanto_bot.png" alt="Ailanthus altissima" width="320">
+        <br/>
+        <br/>
+
+        
+      <div data-role="listview" class="ui-grid-a">
+     	<div class="ui-block-a">
+        <img src="images/paletta.png" alt="piantare">
+        </div>
+        <div class="ui-block-b">
+        <br/>
+        <h3>piantumazione</h3>
+        <p> A DIMORA: ottobre-novembre
+        <br/>
+        A CASSETTA: febbraio</p>
+        </div>
+       
+        <div class="ui-block-a">
+        <img src="images/cucchiaio.png">
+        </div>
+        <div class="ui-block-b">
+        <br/>
+        <h3>fioritura </h3>
+        <p> maggio-luglio </p>
+        </div>
+        
+        <div class="ui-block-a">
+        <img src="images/semi.png" alt="seminare">
+        </div>
+        <div class="ui-block-b">
+        <br/>
+        <h3>raccolta semi </h3>
+        <p> settembre-ottobre </p>
+        </div>
+  
+      </div> <!--listview-->
+      
+      	<div data-role="collapsible-set">
+        <div data-role="collapsible">
+        
+        <h3>altre immagini</h3>
+        <img src="images/piante/ailantus altissima/ailanthus.jpg"width="300">
+        <img src="images/piante/ailantus altissima/ailanthus_altissima_53.jpg" width="300">
+        
+        </div>
+        </div>
+     
+     
+    </div> <!--content-->
+
+	<div data-role="footer" data-fullscreen="true" 
+    data-position="fixed" data-id="vs_footer">
+     <div data-role="navbar">
+     	<ul>
+        	<li> <a href="#home" data-role="button" data-icon="home"> home </a></li>
+        	<li> <a href="#progetto" data-role="button" data-icon="info"> il progetto </a></li>
+			<li> <a href="#elenco2" data-role="button" data-icon="gear"> che pianta e'? </a> </li>
+            <li> <a href="#elenco1" data-role="button" data-icon="gear"> catalogo piante </a> </li>
+            </ul>
+     </div> <!--navbar-->
+     </div> <!--footer-->
+
+</div> <!--ailanthus altissima-->
+
+
+<!--allium -->
+<div data-role="page" id="allium">
+<div data-role="header"
+	data-fullscreen="true">
+    <a href="#" data-icon="back" data-iconpos="notext" class="ui-btn-right" data-rel="back"> back </a>
+    <h4>AGLIO DELLE STREGHE</h4>
+    
+    </div> <!--header-->
+<div data-role="content">
+<p> Allium carinatum </p>
+		<img src="images/piante/allium carinatum/alium_carinatum_bot.png"alt=" Allium carinatum" width="320">
+        <br/>
+        <br/>
+
+        
+      <div data-role="listview" class="ui-grid-a">
+     	<div class="ui-block-a">
+        <img src="images/paletta.png" alt="piantare">
+        </div>
+        <div class="ui-block-b">
+        <br/>
+        <h3>piantumazione</h3>
+        <p> A DIMORA: ottobre-novembre
+        <br/>
+        A CASSETTA: febbraio</p>
+        </div>
+       
+        <div class="ui-block-a">
+        <img src="images/cucchiaio.png">
+        </div>
+        <div class="ui-block-b">
+        <br/>
+        <h3>fioritura </h3>
+        <p> maggio-luglio </p>
+        </div>
+        
+        <div class="ui-block-a">
+        <img src="images/semi.png" alt="seminare">
+        </div>
+        <div class="ui-block-b">
+        <br/>
+        <h3>raccolta semi </h3>
+        <p> settembre-ottobre </p>
+        </div>
+  
+      </div> <!--listview-->
+      
+      	<div data-role="collapsible-set">
+        <div data-role="collapsible">
+        
+        <h3>altre immagini</h3>
+        <img src="images/piante/allium carinatum/Allium carinatum.jpg" width="300">
+        <img src="images/piante/allium carinatum/Allium-carinatum.jpg" width="300">
+        
+        </div>
+        </div>
+     
+     
+    </div> <!--content-->
+
+	<div data-role="footer" data-fullscreen="true" 
+    data-position="fixed" data-id="vs_footer">
+     <div data-role="navbar">
+     	<ul>
+        	<li> <a href="#home" data-role="button" data-icon="home"> home </a></li>
+        	<li> <a href="#progetto" data-role="button" data-icon="info"> il progetto </a></li>
+			<li> <a href="#elenco2" data-role="button" data-icon="gear"> che pianta e'? </a> </li>
+            <li> <a href="#elenco1" data-role="button" data-icon="gear"> catalogo piante </a> </li>
+            </ul>
+     </div> <!--navbar-->
+     </div> <!--footer-->
+
+</div> <!--allium carinatum--> 
+
+
+<!--trifolium rubens-->
+<div data-role="page" id="trifolium">
+<div data-role="header"
+	data-fullscreen="true">
+    <a href="#" data-icon="back" data-iconpos="notext" class="ui-btn-right" data-rel="back"> back </a>
+    <h4> TRIFOGLIO ROSSO </h4>
+    
+    </div> <!--header-->
+<div data-role="content">
+<p> Trifolium rubens </p>
+		<img src="images/piante/trifolium rubens/trifolium_rubens_bot.png" alt="Trifolium rubens" width="320">
+        <br/>
+        <br/>
+
+        
+      <div data-role="listview" class="ui-grid-a">
+     	<div class="ui-block-a">
+        <img src="images/paletta.png" alt="piantare">
+        </div>
+        <div class="ui-block-b">
+        <br/>
+        <h3>piantumazione</h3>
+        <p> A DIMORA: ottobre-novembre
+        <br/>
+        A CASSETTA: febbraio</p>
+        </div>
+       
+        <div class="ui-block-a">
+        <img src="images/cucchiaio.png">
+        </div>
+        <div class="ui-block-b">
+        <br/>
+        <h3>fioritura </h3>
+        <p> maggio-luglio </p>
+        </div>
+        
+        <div class="ui-block-a">
+        <img src="images/semi.png" alt="seminare">
+        </div>
+        <div class="ui-block-b">
+        <br/>
+        <h3>raccolta semi </h3>
+        <p> settembre-ottobre </p>
+        </div>
+  
+      </div> <!--listview-->
+      
+      	<div data-role="collapsible-set">
+        <div data-role="collapsible">
+        
+        <h3>altre immagini</h3>
+        <img src="images/piante/trifolium rubens/trifolium-rubens.jpg" width="300">
+        <img src="images/piante/trifolium rubens/trifolium_rubens.jpg" width="300">
+        
+        </div>
+        </div>
+     
+     
+    </div> <!--content-->
+
+	<div data-role="footer" data-fullscreen="true" 
+    data-position="fixed" data-id="vs_footer">
+     <div data-role="navbar">
+     	<ul>
+        	<li> <a href="#home" data-role="button" data-icon="home"> home </a></li>
+        	<li> <a href="#progetto" data-role="button" data-icon="info"> il progetto </a></li>
+			<li> <a href="#elenco2" data-role="button" data-icon="gear"> che pianta e'? </a> </li>
+            <li> <a href="#elenco1" data-role="button" data-icon="gear"> catalogo piante </a> </li>
+            </ul>
+     </div> <!--navbar-->
+     </div> <!--footer-->
+
+</div> <!--trifolium rubens-->
+
+<!--globularia puncatata-->
+<div data-role="page" id="globularia">
+<div data-role="header"
+	data-fullscreen="true">
+    <a href="#" data-icon="back" data-iconpos="notext" class="ui-btn-right" data-rel="back"> back </a>
+    <h4>GLOBULARIA</h4>
+    
+    </div> <!--header-->
+<div data-role="content">
+<p> Globularia punctata </p>
+		<img src="images/piante/globularia_punctata/Globularia_punctata_bot.png" alt="Globularia punctata" width="320">
+        <br/>
+        <br/>
+
+        
+      <div data-role="listview" class="ui-grid-a">
+     	<div class="ui-block-a">
+        <img src="images/paletta.png" alt="piantare">
+        </div>
+        <div class="ui-block-b">
+        <br/>
+        <h3>piantumazione</h3>
+        <p> A DIMORA: ottobre-novembre
+        <br/>
+        A CASSETTA: febbraio</p>
+        </div>
+       
+        <div class="ui-block-a">
+        <img src="images/cucchiaio.png">
+        </div>
+        <div class="ui-block-b">
+        <br/>
+        <h3>fioritura </h3>
+        <p> maggio-luglio </p>
+        </div>
+        
+        <div class="ui-block-a">
+        <img src="images/semi.png" alt="seminare">
+        </div>
+        <div class="ui-block-b">
+        <br/>
+        <h3>raccolta semi </h3>
+        <p> settembre-ottobre </p>
+        </div>
+  
+      </div> <!--listview-->
+      
+      	<div data-role="collapsible-set">
+        <div data-role="collapsible">
+        
+        <h3>altre immagini</h3>
+        <img src="images/piante/globularia_punctata/Globularia.punctata.ka2.jpg" width="300">
+        <img src="images/piante/globularia_punctata/Globularia-punctata.jpg" width="300">
+        
+        
+        </div>
+        </div>
+     
+     
+    </div> <!--content-->
+
+	<div data-role="footer" data-fullscreen="true" 
+    data-position="fixed" data-id="vs_footer">
+     <div data-role="navbar">
+     	<ul>
+        	<li> <a href="#home" data-role="button" data-icon="home"> home </a></li>
+        	<li> <a href="#progetto" data-role="button" data-icon="info"> il progetto </a></li>
+			<li> <a href="#elenco2" data-role="button" data-icon="gear"> che pianta e'? </a> </li>
+            <li> <a href="#elenco1" data-role="button" data-icon="gear"> catalogo piante </a> </li>
+            </ul>
+     </div> <!--navbar-->
+     </div> <!--footer-->
+
+</div> <!--globularia punctata-->
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+#home {
+	text-align:center;
+	background:#f8f9fa;
+	font-family:"Courier New", Courier, monospace;
+}
+
+h4{
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-style: normal;
+	font-weight:lighter;
+	color: #FFF;
+	text-shadow:none;
+}
+
+.ui-btn-inner {
+	background: #CCE394;
+}
+
+.ui-btn-text{
+	color:#FFF;
+	text-shadow: none;
+	text-decoration:none;
+}
+
+
+
+h1 {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-stretch: condensed;
+	font-weight:lighter;
+	font-size:14pt;
+	color:#999;
+}
+
+h3 {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-style: normal;
+	font-weight:lighter;
+	color: #b8dd5d;
+	text-shadow:none;
+}
+
+#piante{ 
+	background:#f8f9fa;
+}
+
+.ui-li{
+	background:#f8f9fa;
+	font-family: Courier, monospace;
+}
+
+#daucus{
+	text-align:center;
+	background:#f8f9fa;
+	font-family: Courier, monospace;
+}
+
+#achillea{
+	text-align:center;
+	background:#f8f9fa;
+	font-family: Courier, monospace;
+}
+
+#progetto{
+	
+	background:#f8f9fa;
+	font-family: Courier, monospace;
+	font-size:11pt;
+}
+
+#solanum{
+	text-align:center;
+	background:#f8f9fa;
+	font-family: Courier, monospace;
+}
+
+#setaria{
+	text-align:center;
+	background:#f8f9fa;
+	font-family: Courier, monospace;
+}
+
+#galium{
+	text-align:center;
+	background:#f8f9fa;
+	font-family: Courier, monospace;
+}
+
+#verbasco{
+	text-align:center;
+	background:#f8f9fa;
+	font-family: Courier, monospace;
+}
+
+#ailanto{
+	text-align:center;
+	background:#f8f9fa;
+	font-family: Courier, monospace;
+}
+
+#allium{
+	text-align:center;
+	background:#f8f9fa;
+	font-family: Courier, monospace;
+}
+
+#trifolium{
+	text-align:center;
+	background:#f8f9fa;
+	font-family: Courier, monospace;
+}
+
+#globularia{
+	text-align:center;
+	background:#f8f9fa;
+	font-family: Courier, monospace;
+}
+
+#elenco1 {
+	background:#f8f9fa;
+}
+
+#elenco2 {
+	background:#f8f9fa;
+	font-family:"Courier New", Courier, monospace;
+}
+
+
+#progetto{
+	background:#f8f9fa;
+}
+
+#bianco{
+	text-align:center;
+	background:#f8f9fa;
+}
+#viola{
+	text-align:center;
+	background:#f8f9fa;
+}
+#giallo{
+	text-align:center;
+	background:#f8f9fa;
+}
+
+#rosa{
+	text-align:center;
+	background:#f8f9fa;
+}
+#verde{
+	text-align:center;
+	background:#f8f9fa;
+}
+#rosso{
+	text-align:center;
+	background:#f8f9fa;
+}
+
